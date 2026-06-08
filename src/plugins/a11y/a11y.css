@@ -226,36 +226,6 @@ html:not([data-a11y-contrast='default'])[data-a11y-contrast] body
   color: var(--a11y-text-color) !important;
 }
 
-html:not([data-a11y-contrast='default'])[data-a11y-contrast] body [data-a11y-chrome='true'] {
-  outline: 2px solid var(--a11y-border-color) !important;
-  outline-offset: -2px !important;
-  box-shadow: none !important;
-}
-
-html:not([data-a11y-contrast='default'])[data-a11y-contrast] body [data-a11y-chrome='true'] * {
-  box-shadow: none !important;
-  outline: none !important;
-}
-
-html:not([data-a11y-contrast='default'])[data-a11y-contrast] body [data-a11y-chrome='true']
-  :where(a, button, [role='button'], [role='link'], [role='tab'], [role='menuitem'], img, svg, div, span) {
-  background-color: transparent !important;
-  border-color: transparent !important;
-  color: var(--a11y-text-color) !important;
-}
-
-html:not([data-a11y-contrast='default'])[data-a11y-contrast] body [data-a11y-surface='true'] {
-  background-color: var(--a11y-surface-bg) !important;
-  outline: 2px solid var(--a11y-border-color) !important;
-  outline-offset: -2px !important;
-  box-shadow: none !important;
-}
-
-html:not([data-a11y-contrast='default'])[data-a11y-contrast] body [data-a11y-surface='true'] * {
-  box-shadow: none !important;
-  outline: none !important;
-}
-
 html:not([data-a11y-contrast='default'])[data-a11y-contrast] body
   :where(h1, h2, h3, h4, h5, h6, p, span, strong, b, em, i, small, label, legend, blockquote, code, pre):not(#vue-a11y-widget-root *):not(#vue-a11y-widget-standalone-root *) {
   background-color: transparent !important;
